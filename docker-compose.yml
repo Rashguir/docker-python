@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        build: .docker
+        restart: always
+        ports: 
+            - 8888:8888
+        volumes:
+            - .:/usr/src/app
+
